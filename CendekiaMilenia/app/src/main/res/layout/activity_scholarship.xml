@@ -20,7 +20,7 @@
             <EditText
                 android:id="@+id/name"
 
-                android:hint="Name"
+                android:hint="Nama"
                 android:textColorHint="@color/colorPrimaryDark"
                 android:layout_height="50dp"
                 android:layout_width="match_parent"
@@ -44,7 +44,7 @@
             <EditText
                 android:id="@+id/address_KTP"
 
-                android:hint="Address"
+                android:hint="Alamat"
                 android:textColorHint="@color/colorPrimaryDark"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
@@ -67,53 +67,19 @@
                 android:paddingTop="10dp"
                 android:layout_marginTop="10dp"
                 />
-            <HorizontalScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <RadioGroup
-                    android:id="@+id/education"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <RadioButton
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
-                        android:text="SMA"/>
-                    <RadioButton
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
-                        android:text="SMK"/>
-                    <RadioButton
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
-                        android:text="D1"/>
-                    <RadioButton
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
-                        android:text="D2"/>
-                    <RadioButton
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
-                        android:text="D3"/>
-                    <RadioButton
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
-                        android:text="D4"/>
-                    <RadioButton
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
-                        android:text="S1"/>
-                    <RadioButton
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
-                        android:text="S2"/>
-                </RadioGroup>
-            </HorizontalScrollView>
-            <EditText
-                android:id="@+id/email"
+            <Spinner
+                android:id="@+id/education"
 
-                android:hint="Email"
-                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"
+                android:prompt="@string/education"
+                android:layout_width="fill_parent"
+                android:entries="@array/lasteducationlist">
+            </Spinner>
+            <EditText
+                android:id="@+id/current_school"
+
+                android:inputType="text"
+                android:hint="Sekolah/Universitas"
                 android:textColorHint="@color/colorPrimaryDark"
                 android:layout_height="50dp"
                 android:layout_width="match_parent"
@@ -123,10 +89,228 @@
                 android:textSize="8pt"
                 />
             <EditText
-                android:id="@+id/phone"
-                android:inputType="number"
-                android:maxLength="14"
-                android:hint="Mobile Phone"
+                android:id="@+id/current_faculty"
+
+                android:inputType="text"
+                android:hint="Jurusan &amp; Fakultas"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <EditText
+                android:id="@+id/award"
+
+                android:hint="Prestasi yang pernah diraih"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <EditText
+                android:id="@+id/activity"
+
+                android:hint="Sebutkan aktifitas yang relevan dengan dunia digital dan ICT yang selama ini diikuti"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <EditText
+                android:id="@+id/community"
+
+                android:hint="Komunitas ICT yang diikuti"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dengan ini mengajukan Bsntuan Biaya Pendidikan untuk melanjutkan pendidikan di:"
+                android:textSize="8pt"
+                android:textColor="@color/colorPrimaryDark"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:id="@+id/destination_university"
+
+                android:inputType="text"
+                android:hint="Universitas"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <EditText
+                android:id="@+id/destination_faculty"
+
+                android:inputType="text"
+                android:hint="Fakultas"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <EditText
+                android:id="@+id/major"
+
+                android:inputType="text"
+                android:hint="Prodi"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jenjang Pendidikan"
+                android:textSize="8pt"
+                android:textColor="@color/colorPrimaryDark"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <Spinner
+                android:id="@+id/education_level"
+
+                android:layout_height="wrap_content"
+                android:prompt="@string/education"
+                android:layout_width="fill_parent"
+                android:entries="@array/educationlist">
+            </Spinner>
+            <EditText
+                android:id="@+id/reason"
+
+                android:hint="Alasan pemilihan fakultas / program studi yang akan diambil"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <EditText
+                android:id="@+id/description"
+
+                android:hint="Deskripsikan bagaimana ketertarikan anda terhadap dunia ICT"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <EditText
+                android:id="@+id/plan"
+
+                android:hint="Apa rencana anda bila menerima beasiswa dari Yayasan Cedikia Indosat"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <EditText
+                android:id="@+id/social_media"
+
+                android:hint="Sebutkan seluruh social media yang dimiliki (facebook,twitter,line,dll)"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="
+Kumpulkan berkas dibawah ini:
+
+1. Scan KTP
+2. Scan Ijazah SMA/SMK bagi yang ingin melanjutkan ke S1
+3. Scan Ijazah SMA/SMK dan ijazah S1 beserta transkrip nilai bagi yang ingin melanjutkan ke S2
+4. Scan piagam penghargaan yang pernah didapat (bila ada)
+
+Disatukan ke dalam zip/rar dengan format nama file: [Nama lengkap]_[Tgl Lahir]_[Sekolah/Univ asal].zip/rar
+
+Contoh: Fauzan Azhari_22-12-1995_Universitas Indonesia.zip
+
+Unggah file rar/zip tersebut ke cloud storage (contoh: Dropbox, Google Drive, One Drive, dll)
+Pastikan link berkas sudah dalam kondisi public (dapat diakses oleh umum)
+Tidak ada batasan ukuran untuk berkas
+Masukkan link berkas tersebut pada box di bawah
+"
+                android:textSize="8pt"
+                android:textColor="@color/colorPrimaryDark"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:id="@+id/link"
+
+                android:inputType="text"
+                android:hint="Link Berkas"
                 android:textColorHint="@color/colorPrimaryDark"
                 android:layout_height="50dp"
                 android:layout_width="match_parent"
@@ -136,10 +320,10 @@
                 android:textSize="8pt"
                 />
             <Button
-                android:id="@+id/register"
+                android:id="@+id/submit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Register"
+                android:hint="Submit"
                 android:textColorHint="@color/colorPrimaryDark"
                 android:fontFamily="sans-serif-light"
                 android:textSize="8pt"
@@ -147,17 +331,6 @@
                 android:background="@drawable/button_invisible"
                 android:layout_marginTop="20dp"
                 />
-            <TextView
-                android:id="@+id/login"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@null"
-                android:text="Already Registered! Login here."
-                android:textAllCaps="false"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="8pt"
-                android:gravity="center"/>
 
         </LinearLayout>
     </ScrollView>

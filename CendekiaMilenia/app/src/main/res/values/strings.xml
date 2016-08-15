@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">Cendekia Milenia</string>
     <string name="action_settings">Settings</string>
+    <string name="education">Education</string>
+    <string name="SMA">SMA</string>
+    <string name="SMK">SMK</string>
+    <string name="D1">D1</string>
+    <string name="D2">D2</string>
+    <string name="D3">D3</string>
+    <string name="S1">S1</string>
+    <string name="S2">S2</string>
 </resources>
+
+
