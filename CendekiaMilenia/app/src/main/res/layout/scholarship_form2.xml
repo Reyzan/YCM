@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:padding="30dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/reason"
+
+                android:hint="Alasan pemilihan fakultas / program studi yang akan diambil"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <EditText
+                android:id="@+id/description"
+
+                android:hint="Deskripsikan bagaimana ketertarikan anda terhadap dunia ICT"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <EditText
+                android:id="@+id/plan"
+
+                android:hint="Apa rencana anda bila menerima beasiswa dari Yayasan Cedikia Indosat"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <EditText
+                android:id="@+id/social_media"
+
+                android:hint="Sebutkan seluruh social media yang dimiliki (facebook,twitter,line,dll)"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="
+Kumpulkan berkas dibawah ini:
+
+1. Scan KTP
+2. Scan Ijazah SMA/SMK bagi yang ingin melanjutkan ke S1
+3. Scan Ijazah SMA/SMK dan ijazah S1 beserta transkrip nilai bagi yang ingin melanjutkan ke S2
+4. Scan piagam penghargaan yang pernah didapat (bila ada)
+
+Disatukan ke dalam zip/rar dengan format nama file: [Nama lengkap]_[Tgl Lahir]_[Sekolah/Univ asal].zip/rar
+
+Contoh: Fauzan Azhari_22-12-1995_Universitas Indonesia.zip
+
+Unggah file rar/zip tersebut ke cloud storage (contoh: Dropbox, Google Drive, One Drive, dll)
+Pastikan link berkas sudah dalam kondisi public (dapat diakses oleh umum)
+Tidak ada batasan ukuran untuk berkas
+Masukkan link berkas tersebut pada box di bawah
+"
+                android:textSize="8pt"
+                android:textColor="@color/colorPrimaryDark"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:id="@+id/link"
+
+                android:inputType="text"
+                android:hint="Link Berkas"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Submit"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                android:layout_gravity="center"
+                android:background="@drawable/button_invisible"
+                android:layout_marginTop="20dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

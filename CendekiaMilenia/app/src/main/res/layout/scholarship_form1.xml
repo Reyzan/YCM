@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:padding="30dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/name"
+
+                android:hint="Nama"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+
+            <EditText
+                android:id="@+id/birth_date"
+                android:hint="Tempat Tanggal Lahir"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <EditText
+                android:id="@+id/address_KTP"
+
+                android:hint="Alamat"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <EditText
+                android:id="@+id/email"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pendidikan Terakhir"
+                android:textSize="8pt"
+                android:textColor="@color/colorPrimaryDark"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <Spinner
+                android:id="@+id/education"
+
+                android:layout_height="wrap_content"
+                android:prompt="@string/education"
+                android:layout_width="fill_parent"
+                android:entries="@array/lasteducationlist">
+            </Spinner>
+            <EditText
+                android:id="@+id/current_school"
+
+                android:inputType="text"
+                android:hint="Sekolah/Universitas"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <EditText
+                android:id="@+id/current_faculty"
+
+                android:inputType="text"
+                android:hint="Jurusan &amp; Fakultas"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <EditText
+                android:id="@+id/award"
+
+                android:hint="Prestasi yang pernah diraih"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <EditText
+                android:id="@+id/activity"
+
+                android:hint="Sebutkan aktifitas yang relevan dengan dunia digital dan ICT yang selama ini diikuti"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <EditText
+                android:id="@+id/community"
+
+                android:hint="Komunitas ICT yang diikuti"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dengan ini mengajukan Bsntuan Biaya Pendidikan untuk melanjutkan pendidikan di:"
+                android:textSize="8pt"
+                android:textColor="@color/colorPrimaryDark"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:id="@+id/destination_university"
+
+                android:inputType="text"
+                android:hint="Universitas"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <EditText
+                android:id="@+id/destination_faculty"
+
+                android:inputType="text"
+                android:hint="Fakultas"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <EditText
+                android:id="@+id/major"
+
+                android:inputType="text"
+                android:hint="Prodi"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-light"
+                android:textSize="8pt"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jenjang Pendidikan"
+                android:textSize="8pt"
+                android:textColor="@color/colorPrimaryDark"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <Spinner
+                android:id="@+id/educational_level"
+
+                android:layout_height="wrap_content"
+                android:prompt="@string/education"
+                android:layout_width="fill_parent"
+                android:entries="@array/educationlist">
+            </Spinner>
+        </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>
