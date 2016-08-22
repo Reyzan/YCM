@@ -153,7 +153,61 @@ public class SessionManager {
         editor.commit();
         Log.d("TAG","Session Set Link");
     }
-    public String getName(){
+    public String getKeyName(){
         return pref.getString(KEY_NAME,null);
+    }
+    public String getKeyBirthdate(){
+        return pref.getString(KEY_BIRTHDATE,null);
+    }
+    public String getKeyAddressktp(){
+        return pref.getString(KEY_ADDRESSKTP,null);
+    }
+    public String getKeyEmail(){
+        return pref.getString(KEY_EMAIL,null);
+    }
+    public String getKeyEducation(){
+        return pref.getString(KEY_EDUCATION,null);
+    }
+    public String getKeyCurrentschool(){
+        return pref.getString(KEY_CURRENTSCHOOL,null);
+    }
+    public String getKeyCurrentfaculty(){
+        return pref.getString(KEY_CURRENTFACULTY,null);
+    }
+    public String getKeyAward(){
+        return pref.getString(KEY_AWARD,null);
+    }
+    public String getKeyActivity(){
+        return pref.getString(KEY_ACTIVITY,null);
+    }
+    public String getKeyCommunity(){
+        return pref.getString(KEY_COMMUNITY,null);
+    }
+    public String getKeyDestinationuniversity(){
+        return pref.getString(KEY_DESTINATIONUNIVERSITY,null);
+    }
+    public String getKeyDestinationfaculty(){
+        return pref.getString(KEY_DESTINATIONFACULTY,null);
+    }
+    public String getKeyMajor(){
+        return pref.getString(KEY_MAJOR,null);
+    }
+    public String getKeyEducationallevel(){
+        return pref.getString(KEY_EDUCATIONALLEVEL,null);
+    }
+    public String getKeyReason(){
+        return pref.getString(KEY_REASON,null);
+    }
+    public String getKeyDescription(){
+        return pref.getString(KEY_DESCRIPTION,null);
+    }
+    public String getKeyPlan(){
+        return pref.getString(KEY_PLAN,null);
+    }
+    public String getKeySocialmedia(){
+        return pref.getString(KEY_SOCIALMEDIA,null);
+    }
+    public String getKeyLink(){
+        return pref.getString(KEY_LINK,null);
     }
 }
